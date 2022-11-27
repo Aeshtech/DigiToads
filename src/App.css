@@ -1,38 +1,239 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: PoufBlack;
+  src: url("../src/fonts/PoufV02-Black.ttf");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: PoufExtra;
+  src: url('../src/fonts/PoufV0.2-BlackExtraExpanded.ttf');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: PoufBlack;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  font-family: Jost;
+}
+
+:root {
+  --theme-bg: #5dbc84;
+}
+
+.bg-theme {
+  background-color: #7fe5a9;
+}
+
+.bg-light-theme {
+  background-color: #a4f4c5;
+}
+
+.bg-btn {
+  background-color: #3baa68;
+}
+
+.bg-card {
+  background-color: #9df8c2;
+}
+
+.color-theme {
+  color: #2e7a4d;
+}
+
+.color-light-theme {
+  color: #53b47b;
+}
+
+.color-dark-theme {
+  color: #384e41;
+}
+
+.hero-img {
+  background-image: url("../public/img/sliderbg.png");
+  background-size: cover;
+  height: 100vh;
+}
+
+.navbar-brand {
+  width: 20vw;
+  padding: 0;
+  margin: 0;
+}
+
+
+.nav-icons i {
   color: white;
+  margin-right: 15px;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar button {
+  border: 2px solid #010101;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-body .card-text {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.card-body button {
+  min-width: 7vw;
+  border-radius: 9px;
+  margin-right: 5px;
+}
+
+.mySection .card-header {
+  background-image: url(http://localhost:3000/static/media/logo.04efabac7095a26a08f3.png);
+  background-repeat: repeat-x;
+  background-size: contain;
+  height: 45px;
+  padding: 10px 0px;
+  background-origin: content-box;
+}
+
+.mySection img.circle {
+  width: 10%;
+  position: absolute;
+  top: 45%;
+  right: 5%;
+}
+
+.mySection .monkey {
+  position: absolute;
+  left: 15%;
+  bottom: -27px;
+}
+
+.mySection .monkey>img {
+  width: 66%;
+}
+
+.mySection .circle1 {
+  position: absolute;
+  bottom: 20%;
+  left: 1%;
+}
+
+.mySection .circle2 {
+  position: absolute;
+  top: 10%;
+  right: 4%;
+  width: 80px;
+}
+
+.section2 .header img {
+  position: absolute;
+  width: 140px;
+  clip: rect(0px, 36px, 200px, 0px);
+  left: 61%;
+}
+
+.section2 .header h2 {
+  margin-top: 20px;
+}
+
+.section2 .myCard {
+  border-radius: 35px;
+}
+
+.section2 .myCard img.logo {
+  clip: rect(0px, 52px, 200px, 0px);
+  width: 40%;
+  position: absolute;
+}
+
+.section2 .myCard p {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.section2 .firstRow, .section2 .secondRow {
+  border-bottom: 1px solid #00800030 !important;
+}
+
+.section2 .secondRow .icon {
+  width: 85px;
+  height: 85px;
+  text-align: center;
+  min-width: 85px;
+  margin-right: 20px;
+  background-color: #05381a;
+}
+
+.section2 .secondRow img {
+  width: 70px;
+}
+
+.myBorder {
+  border: 2px solid #4d9f0c!important;
+}
+
+.section2 .circle1{
+  position: absolute;
+  bottom: 31%;
+  left: 1%;
+}
+.section2 .circle2 {
+  position: absolute;
+  top: 10%;
+  right: 4%;
+  width: 80px;
+}
+
+input {
+  outline: 0;
+  border-width: 0 0 2px!important;
+  border-color: grey!important;
+}
+/* input:focus {
+  
+} */
+.form-control:focus{
+  box-shadow: unset!important;
+  border-color: black!important;
+}
+.form-control:hover{
+  border-color: #3baa68!important;
+}
+
+.clipped{
+  /* clip-path: polygon(50% 0, 100% 19%, 100% 100%, 0 100%, 0 21%); */
+  /* clip-path: polygon(50% 0, 100% 50%, 100% 100%, 0 100%, 0 50%); */
+  clip-path: polygon(50% 0, 100% 78%, 100% 100%, 0 100%, 0 78%);
+  height: 16vh;
+}
+
+.footer .nav-item{
+  margin: 0px 7px;
+  color: #2e7a4d;
+}
+
+.footer-frog{
+  width: 7%;
+  top: -47px;
+  left: 47%;
+}
+.footer-DigiToads{
+  width: 17%;
+  top: 56px;
+  left: 42%;
+}
+
+.contact .circle2{
+  position: absolute;
+  bottom: 20%;
+  right: 4%;
+  width: 80px;
+}
+
+.contracts .card-body .circle1{
+  position: absolute;
+  top:5%;
+  right: 2%;
+  width: 90px;
 }
